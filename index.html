@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitty Games</title>
     <!-- Icon by microstd on Flaticon - https://www.flaticon.com/free-icons/awesome -->
-    <link rel="shortcut icon" href="images/cool-.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -26,7 +26,7 @@
       <div class="container">
         <div class="navbar">
           <div class="logo-and-title">
-            <img src="images/cool-.png" alt="Logo" />
+            <img src="images/logo.png" alt="Logo" />
             <h1>Kitty Games</h1>
           </div>
           <nav>
@@ -45,7 +45,122 @@
         </div>
       </div>
     </header>
-
+    <main class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <section id="sobre">
+        <div class="row">
+          <div class="col-5">
+            <div
+              class="carousel slide"
+              data-bs-ride="carousel"
+              id="carousel-one"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="images/1.jpg" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="images/2.jpg" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="images/3.jpg" />
+                </div>
+              </div>
+              <!-- Foto de Jose Gil via Unsplash - https://unsplash.com/pt-br/fotografias/2pNdTBn4C7U -->
+              <!-- Foto de Lucas Santos via Unsplash - https://unsplash.com/pt-br/fotografias/wdg8yu362gQ -->
+              <!-- Foto de Igor Karimov via Unsplash - https://unsplash.com/pt-br/fotografias/fXmmSz5KkO8 -->
+              <button
+                class="carousel-control-prev"
+                data-bs-target="#carousel-one"
+                data-bs-slide="prev"
+                type="button"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                data-bs-target="#carousel-one"
+                data-bs-slide="next"
+                type="button"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  data-bs-target="#carousel-one"
+                  data-bs-slide-to="0"
+                  type="button"
+                ></button>
+                <button
+                  data-bs-target="#carousel-one"
+                  data-bs-slide-to="1"
+                  type="button"
+                ></button>
+                <button
+                  data-bs-target="#carousel-one"
+                  data-bs-slide-to="2"
+                  type="button"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <h2>Sobre</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              cum quia expedita quos molestias dignissimos veniam necessitatibus
+              mollitia, error incidunt, quam doloremque repellat repellendus
+              atque voluptas ratione nesciunt, quisquam illum! Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Tempore eos esse, itaque
+              at dicta optio iusto obcaecati dolores nostrum quisquam sint animi
+              a cum tempora exercitationem voluptatibus illo reprehenderit
+              facere.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="produtos">
+        <div class="row"><h2>Produtos</h2></div>
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img src="images/ps5.png" />
+              <div class="card-body">
+                <h3 class="card-title">PlayStation 5</h3>
+                <p class="card-text">
+                  A partir de R$3.719,00. Conheça as condições de parcelamento!
+                </p>
+                <a href="#" class="btn btn-info">Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="images/xbox.jpg" />
+              <div class="card-body">
+                <h3 class="card-title">Xbox One</h3>
+                <p class="card-text">
+                  A partir de R$2.773,00. Conheça as condições de parcelamento!
+                </p>
+                <a href="#" class="btn btn-info">Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="images/switch.png" />
+              <div class="card-body">
+                <h3 class="card-title">Xbox One</h3>
+                <p class="card-text">
+                  A partir de R$2.773,00. Conheça as condições de parcelamento!
+                </p>
+                <a href="#" class="btn btn-info">Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
   </body>
 </html>
