@@ -37,12 +37,16 @@ div.logo-and-title {
   gap: 26px;
 }
 
-div.logo-and-title,
+div.logo-and-title-container,
 .contact-item {
   user-select: none;
 }
 
 /* NAVBAR */
+
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
 
 .nav-pills .nav-link.active,
 .btn-info {
@@ -143,4 +147,90 @@ a.btn.btn-info:active,
 footer h2,
 footer p {
   color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo-and-title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .navbar-toggler {
+    background-color: #fff;
+  }
+
+  a.nav-link {
+    margin: 16px 0 0 0;
+    padding: 8px;
+  }
+
+  section h2 {
+    margin: 16px 0;
+  }
+
+  .card {
+    margin-bottom: 28px;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 8px;
+  }
+
+  .logo-and-title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .navbar-toggler {
+    background-color: #fff;
+  }
+
+  a.nav-link {
+    margin: 16px 0 0 0;
+    padding: 8px;
+  }
+
+  .card {
+    margin-bottom: 28px;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+
+  div.contact-items-container {
+    flex-direction: column;
+  }
+
+  section h2 {
+    margin: 28px 0 16px 0;
+  }
+
+  p:not(p.card-text, footer p) {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .no-mb {
+    margin: 0;
+  }
 }
