@@ -4,9 +4,13 @@ body {
 
 /* HEADER */
 
+header,
+footer {
+  background-color: #813581;
+}
+
 header {
   padding: 8px 0;
-  background-color: #813581;
   margin-bottom: 32px;
   position: sticky;
   top: 0;
@@ -16,14 +20,14 @@ header {
 
 header h1 {
   margin: 0;
-  color: #fff;
   font-weight: bold;
   font-family: "Tektur", cursive;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
 }
 
-header h1:hover {
+header h1:hover,
+.nav-link:hover:not(.nav-link.active) {
   text-shadow: 0 0 7px #df00df, 0 0 10px #df00df, 0 0 20px #fff;
 }
 
@@ -31,6 +35,10 @@ div.logo-and-title {
   display: flex;
   align-items: center;
   gap: 26px;
+}
+
+div.logo-and-title,
+.contact-item {
   user-select: none;
 }
 
@@ -44,29 +52,22 @@ div.logo-and-title {
 
 .btn-info {
   border: none;
-  color: #fff;
   width: 100%;
 }
 
-.btn.btn-info:hover {
-  background-color: #360036;
-  color: #fff;
-}
-
+.btn.btn-info:hover,
 .btn.btn-info:active {
   background-color: #360036;
 }
 
 .nav-link {
   margin-left: 16px;
-  color: #fff;
   font-size: 20px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover:not(.nav-link.active) {
   color: #310031;
-  text-shadow: 0 0 7px #df00df, 0 0 10px #df00df, 0 0 20px #fff;
 }
 
 /* CAROUSEL */
@@ -88,18 +89,12 @@ div.logo-and-title {
 /* FOOTER */
 
 footer {
-  background-color: #813581;
   padding: 16px 0;
   text-align: center;
 }
 
-footer h2 {
-  color: #fff;
-}
-
 footer p {
   margin: 0;
-  color: #fff;
   padding-top: 16px;
   border-top: 1px solid #3100313f;
 }
@@ -118,7 +113,6 @@ footer p {
 
 .contact-item {
   gap: 8px;
-  user-select: none;
 }
 
 /* GLOBALS */
@@ -133,16 +127,9 @@ h2 {
 
 i {
   font-size: 28px;
-  color: #fff;
 }
-
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #fff;
-}
-
-a.nav-link:visited {
-  color: #fff;
 }
