@@ -15,7 +15,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 header h1 {
@@ -78,7 +78,7 @@ div.logo-and-title,
 
 /* CARDS */
 
-#produtos h2 {
+#products h2 {
   margin-bottom: 16px;
 }
 
@@ -132,4 +132,15 @@ i {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+header h1,
+a.nav-link,
+a.contact-item,
+.btn-info,
+.btn-info:hover,
+a.btn.btn-info:active,
+footer h2,
+footer p {
+  color: #fff;
 }
